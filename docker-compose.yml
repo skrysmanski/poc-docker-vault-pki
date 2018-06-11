@@ -5,5 +5,8 @@ services:
     command: server
     cap_add:
       - IPC_LOCK
+    ports:
+      - "8200:8200"
     volumes:
       - "./config:/vault/config"
+      - "./data:/vault/file"
