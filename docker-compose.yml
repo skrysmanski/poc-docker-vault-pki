@@ -3,3 +3,7 @@ services:
   vault:
     image: 'vault'
     command: server
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - "./config:/vault/config"
