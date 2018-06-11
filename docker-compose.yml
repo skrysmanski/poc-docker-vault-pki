@@ -1,0 +1,5 @@
+version: '3'
+services:
+  vault:
+    image: 'vault'
+    command: server
