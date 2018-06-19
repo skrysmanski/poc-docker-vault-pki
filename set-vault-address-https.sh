@@ -5,4 +5,4 @@
 # $ . ./set-vault-address-https.sh
 #
 
-export VAULT_ADDR=https://127.0.0.1:8202
+export VAULT_ADDR=https://vault:8202
