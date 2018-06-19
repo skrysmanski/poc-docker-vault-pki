@@ -14,3 +14,5 @@
     allow_bare_domains=true \
     allow_subdomains=false \
     max_ttl=72h
+
+./get-root-ca-cert.sh
