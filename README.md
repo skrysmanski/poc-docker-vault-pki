@@ -49,6 +49,12 @@ And then you need to unseal the vault again:
 
     ./unseal-vault.sh
 
+Now the vault works.
+
+When you're done, shut down the vault with:
+
+    docker-compose down
+
 
 ## Installing a root certificate
 

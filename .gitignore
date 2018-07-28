@@ -1,5 +1,4 @@
 /vault
-/data
 /root-ca.pem
-/config/vault.crt
-/config/vault.key
+/data/
+/certs/
