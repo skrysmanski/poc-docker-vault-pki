@@ -7,7 +7,6 @@ services:
       - IPC_LOCK
     ports:
       - "8200:8200"
-      - "8202:8202"
     volumes:
       - "./config:/vault/config"
       - "./data:/vault/file"
