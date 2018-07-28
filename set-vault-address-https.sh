@@ -6,3 +6,4 @@
 #
 
 export VAULT_ADDR=https://$(hostname):8200
+export VAULT_CACERT=./root-ca.pem
