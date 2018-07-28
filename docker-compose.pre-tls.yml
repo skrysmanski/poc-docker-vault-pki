@@ -7,8 +7,6 @@ services:
       - IPC_LOCK
     ports:
       - "8202:8202"
-    environment:
-      - VAULT_LOCAL_CONFIG=/vault-config/vault-no-tls.hcl
     volumes:
-      - "./config:/vault-config:ro"
+      - "./config-pre-tls:/vault/config:ro"
       - "./data:/vault/file"

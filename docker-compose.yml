@@ -7,9 +7,7 @@ services:
       - IPC_LOCK
     ports:
       - "8200:8200"
-    environment:
-      - VAULT_LOCAL_CONFIG=/vault-config/vault-tls.hcl
     volumes:
-      - "./config:/vault-config:ro"
-      - "./certs:/vault-certs:ro"
+      - "./config:/vault/config:ro"
+      - "./certs:/vault/certs:ro"
       - "./data:/vault/file"
