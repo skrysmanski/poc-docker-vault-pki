@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 ROLE_NAME=vault
-DOMAIN_NAME=vault
+DOMAIN_NAME=$(hostname)
 
 CERT_DATA=$(./vault write -format=json pki/issue/$ROLE_NAME common_name=$DOMAIN_NAME)
 
