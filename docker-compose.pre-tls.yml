@@ -1,0 +1,13 @@
+version: '3'
+services:
+  vault:
+    image: 'vault'
+    command: server
+    cap_add:
+      - IPC_LOCK
+    ports:
+      - "8200:8200"
+      - "8202:8202"
+    volumes:
+      - "./config-pre-tls:/vault/config"
+      - "./data:/vault/file"
