@@ -8,5 +8,6 @@ services:
     ports:
       - "8200:8200"
     volumes:
-      - "./config:/vault/config"
+      - "./config:/vault/config:ro"
+      - "./certs:/vault/certs:ro"
       - "./data:/vault/file"

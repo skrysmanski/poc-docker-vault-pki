@@ -8,5 +8,5 @@ services:
     ports:
       - "8202:8202"
     volumes:
-      - "./config-pre-tls:/vault/config"
+      - "./config-pre-tls:/vault/config:ro"
       - "./data:/vault/file"
